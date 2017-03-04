@@ -7,9 +7,9 @@ import trivia
 
 
 class test1(TestCase):
-    sys.stdout = open('reference/test_result.txt', 'w')
 
     def test_one(self):
+        sys.stdout = open('reference/test_result.txt', 'w')
 
         game = trivia.Game()
 
