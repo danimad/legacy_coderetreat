@@ -1,5 +1,38 @@
 #!/usr/bin/env python
 
+from enum import enum
+class QuestionType(Enum):
+     Pop = 'Pop'
+     Science = 'Science'
+     Sports = 'Sports'
+     Rock= 'Rock'
+     History = 'Hist'
+
+class QuestionBank:
+    qindexlist = dict()
+    qlist = dict()
+    def create_question(self, questiontype, question):
+        l = self.qlist.get(questiontype, list())
+        l.append(question)
+        self.qlist[questiontype] = l
+    
+    def get_next_question(self, questiontype):
+        self.qindexlist[questiontype] = self.qindexlist.get(questiontype, -1) + 1
+        l = self.qlist.get(questiontype, list())
+        if self.qindexlist[questiontype]>=len(l):
+            self.qindexlist[questiontype] = 0
+        return l[self.qindexlist[questiontype]]
+
+    
+class Board:
+    fields = list()
+    def __init__(self):
+        for t in [Pop, Science, Sports, Rock, History, Science, Sports, Rock, History, Science, Sports, Rock]:
+            fields.append(t)
+
+    def get_field_type(self, index):
+        return self.fields(index%len(self.fields))
+
 class Game:
     def __init__(self):
         self.players = []
