@@ -33,6 +33,9 @@ class Board:
     def get_field_type(self, index):
         return self.fields(index%len(self.fields))
 
+    def get_board_size(self):
+        return len(self.fields)
+
 class Game:
     def __init__(self):
         self.players = []
