@@ -60,7 +60,7 @@ Sue is the current player
 They have rolled a 1
 Sue's new location is 8
 The category is Pop
-Pop Question 0
+Hist Question 0
 Answer was corrent!!!!
 Sue now has 3 Gold Coins.
 Chet is the current player
@@ -84,7 +84,7 @@ Chet is the current player
 They have rolled a 1
 Chet's new location is 4
 The category is Pop
-Pop Question 1
+Hist Question 1
 Answer was corrent!!!!
 Chet now has 5 Gold Coins.
 Pat is the current player
@@ -101,6 +101,6 @@ Chet is the current player
 They have rolled a 4
 Chet's new location is 8
 The category is Pop
-Pop Question 2
+Hist Question 2
 Answer was corrent!!!!
 Chet now has 6 Gold Coins.
